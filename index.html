@@ -6,15 +6,32 @@
     </head>
 
     <body>
+    <div class="navBar">
+        <!--navigation bar-->
         <h1>ChatWeb</h1>
         <p>Welcome to an HTML ChatWeb</p>
-        <p id="here"></p>
+    </div>
+
+    <div class="chatBox" id="chatBox">
+        <!--messages will be sent in this div-->
+        <h1 style="text-align:center;">Your Chat Starts Here<br>
+        --------------------------------------------
+        </h1>
+    </div>
+        
         
         <form onsubmit="sendMsg(event)" autocomplete="off">
             <input type="text" id="sendBox" name="msg">
             <input type="submit" value="send">
         </form>
 
+        <div class="name-popup">
+            <form class="name-container">
+                <h2><b>Write your name:</b></h2>
+                <input type="text">
+                <input type="submit" value="Save">
+            </form>
+        </div>
     <script src="JavaScript.js"></script>
     </body>
 </html>
