@@ -5,5 +5,34 @@ body{
     font-family:arial;
 }
 form{
-    text-align:center
+    text-align:center;
+}
+.name-popup{
+    /*display: none;*/
+    position: fixed;
+    right:50%;
+    transform:translate(50%,50%);
+    border: 3px solid black;
+    z-index: 9;
+}
+.name-container{
+    max-width: 300px;
+    padding: 15px;
+    background-color: white;
+}
+.navBar{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 10px -10px;
+}
+.chatBox{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    text-align: right;
+    max-height: 300px;
+    max-width: 1000px;
+    border: 3px solid black;
+    overflow: auto;
 }
